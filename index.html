@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center a Div Vertically and Horizontally Using Bootstrap</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      /* set text color to white for better readability */
+    }
+
+    div {
+      text-align: center;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    .main-gif img{
+      margin-top: 150px;
+      width: 40%;
+    }
+    .designation-gif img{
+      width: 45%;
+    }
+    .get-in-touch img {
+      width: 100px;
+    }
+    .get-in-touch {
+      justify-content:center;
+    }
+
+    @media (max-width: 576px) {
+      .vimeo img {
+        width: 25px;
+      }
+      .dribble img {
+        width: 25px;
+      }
+      .instagram img {
+        width: 25px;
+      }
+      .behance img {
+        width: 25px;
+      }
+      .content-1{
+        justify-content: center;
+      }
+      .main-gif img{
+        width: 80%;
+      }
+      .designation-gif img{
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="row">
+      <div class="content-1 col-sm-12">
+        <div class="main-gif">
+          <img src="static/gifs/Name.gif" class="img-fluid" />
+        </div>
+        <div class="designation-gif">
+          <img src="static/gifs/Designations.gif" class="img-fluid" />
+        </div>
+
+        <div class="w-100" style="height:25px"></div>
+        <div class="contact row  col-sm-12 mb-3  justify-content-center">
+          <div class="vimeo">
+            <a href="https://vimeo.com/lalson">
+              <img src="static/icons/vimeo.png" class="img-fluid mr-3" width="20px"/>
+            </a>
+          </div>
+          <div class="dribble">
+            <a href="https://dribbble.com/Lalson">
+            <img src="static/icons/dribbble.png" class="img-fluid mr-3" width="20px" />
+            </a>
+
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/ngaihte/">
+
+            <img src="static/icons/instagram.png" class="img-fluid mr-3" width="20px" />
+            </a>
+
+          </div>
+          <div class="behance">
+            <a href="https://www.behance.net/Lalson">
+            <img src="static/icons/behance.png" class="img-fluid" width="20px" />
+            </a>
+
+          </div>
+        </div>
+
+        <div class="w-100" style="height:50px"></div>
+        <div class="get-in-touch col-sm-12">
+            <img src="static/get-in-touch/get-in-touch.png" class="img-fluid"/>
+
+        </div>
+
+        <div class="footer row  col-sm-12 justify-content-center">
+          <div class="google mr-2">
+            <a href="https://vimeo.com/lalson">
+              <img src="static/get-in-touch/google.png" class="img-fluid" width="20px"/>
+            </a>
+          </div>
+          <div class="linkedin mr-2">
+            <a href="https://dribbble.com/Lalson">
+            <img src="static/get-in-touch/linkedin-logo.png" class="img-fluid" width="20px" />
+            </a>
+
+          </div>
+          <div class="working mr-2">
+            <a href="https://www.instagram.com/ngaihte/">
+
+            <img src="static/get-in-touch/Working-Not-Working.jpg" class="img-fluid" width="22px" />
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Include Bootstrap JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
